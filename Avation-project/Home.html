@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avation</title>
+    <link rel="shortcut icon" href="assets/Images/fave_icon.png" type="image/x-icon">
+    <!-- Framework Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap_lib/bootstrap.min.css">
+    <!-- Font Awesome / Icon Fonts -->
+    <link rel="stylesheet" href="assets/css/fontawesome_lib/css/all.min.css">
+    <!-- Style Theme -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive Theme -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- slider -->
+    <!-- <link rel="stylesheet" href="assets/css/slick.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- slider -->
+    <!-- <link rel="stylesheet" href="assets/css/slick-theme.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body>
+    <!-- ======== 1.1. Header Style ========  -->
+    <div class="home">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Home.html"><img src="assets/Images/logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class=" collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link mx-2 active" aria-current="page" href="Home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="About.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="Service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link mx-2" href="Contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="Projects.html">Project</a></li>
+                                <li><a class="dropdown-item" href="Team.html">Team</a></li>
+                                <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="Pricing.html">Pricing Plan</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="Coming_soon.html">Coming Soon</a></li>
+                                <li><a class="dropdown-item" href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ms-auto header_btn">
+                        <a href="Contact.html"> Contact Us </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <aside id="mySidepanel" class="sidepanel">
+            <div class="sidebar">
+                <figure>
+                    <a href="Home.html"> <img src="assets/Images/logo.svg" alt="logo"> </a>
+                </figure>
+                <button class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div>
+                <ul>
+                    <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                    <li class="pages">More</li>
+                    <li class="collapse_btn nav-item">
+                        <a class="nav-link plus_collapse" data-bs-toggle="collapse" href="#pages" role="button" aria-expanded="false" aria-controls="pages">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <div class="collapse" id="pages">
+                            <ul>
+                                <li class="nav-item"><a class="nav-link" href="Projects.html">Project</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Team.html">Team</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Testimonial.html">Testimonial</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing Plan</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Coming_soon.html">Coming Soon</a></li>
+                                <li class="nav-item"><a class="nav-link" href="404.html">404</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- ======== End of 1.1. Header Style ========  -->
+
+        <!-- ======== 1.2. Banner Style ======== -->
+        <div class="slider carousel-inner">
+            <div class="carousel-item active">
+                <section class="container">
+                    <div class="row banner">
+                        <div class="col-lg-6 col-md-6">
+                            <h1> Let’s Horizon <span> Robotics </span> Handle It. </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="About.html" class="button d-flex align-items-center">
+                                <img src="assets/Images/web_title_btn1.svg" alt="web_title_btn1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p>Learn More</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div>
+                                <figure><img src="assets/Images/web_title.png" alt="web_title"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section class="container">
+                    <div class="row banner">
+                        <div class="col-lg-6 col-md-6">
+                            <h1>Let’s Horizon <span> Robotics </span> Handle It.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="About.html" class="button d-flex align-items-center">
+                                <img src="assets/Images/web_title_btn1.svg" alt="web_title_btn1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p>Learn More</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div>
+                                <figure><img src="assets/Images/web_title.png" alt="web_title"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section class="container">
+                    <div class="row banner">
+                        <div class="col-lg-6 col-md-6">
+                            <h1>Let’s Horizon <span> Robotics </span> Handle It.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="About.html" class="button d-flex align-items-center">
+                                <img src="assets/Images/web_title_btn1.svg" alt="web_title_btn1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p>Learn More</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div>
+                                <figure><img src="assets/Images/web_title.png" alt="web_title"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- ======== End of 1.2. Banner Style ======== -->
+
+    <!--======== 1.3. Services Style ======== -->
+    <section class="container">
+        <div class="row service">
+            <div class="col-lg-6 col-md-6">
+                <div>
+                </div>
+                <figure><img src="assets/Images/service.png" alt="service"></figure>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="d-flex gap-4 mb-2">
+                    <h3>Services</h3>
+                    <hr>
+                </div>
+                <h2>Promising Care; <span>Right At Home</span> </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,</p>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.3. Services Style ======== -->
+
+    <!-- ======== 1.4. Card Style ======== -->
+    <section class="container">
+        <div class="home_card mt">
+            <div class="card1">
+                <div>
+                    <img src="assets/Images/card1.png" alt="card_image">
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/Images/card2_2.png" alt="card_inner_img">
+                        <h3>Automation</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <a href="Service.html"> Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card1">
+                <div>
+                    <img src="assets/Images/card2.png" alt="card_image">
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/Images/card3_3.png" alt="card_inner_img">
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <a href="Service.html"> Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home_card">
+            <div class="card1">
+                <div>
+                    <img src="assets/Images/card3.png" alt="card_image">
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/Images/card4_4.png" alt="card_inner_img">
+                        <h3>Cyber Security</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <a href="Service.html"> Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card1">
+                <div>
+                    <img src="assets/Images/card4.png" alt="card_image">
+                </div>
+                <div>
+                    <div>
+                        <img src="assets/Images/card2_2.png" alt="card_inner_img">
+                        <h3>Cloud Computing</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <a href="Service.html"> Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.4. Card Style ======== -->
+
+    <!-- ======== 1.5. Counter Style ======== -->
+    <section class="counter">
+        <div>
+            <img src="assets/Images/counter.png" alt="counter_image">
+        </div>
+        <div class="counter_bg">
+            <div class="count_div d-flex gap-2">
+                <div class="d-flex">
+                    <h2 class="count"> 243 </h2>
+                    <h2>+</h2>
+                </div>
+                <h5>Clients</h5>
+            </div>
+            <div class="count_div d-flex gap-2">
+                <div class="d-flex">
+                    <h2 class="count"> 70 </h2>
+                    <h2>+</h2>
+                </div>
+                <h5>Projects</h5>
+            </div>
+            <div class="count_div d-flex gap-2">
+                <div class="d-flex">
+                    <h2 class="count"> 80 </h2>
+                    <h2>+</h2>
+                </div>
+                <h5>Robots</h5>
+            </div>
+            <div class="count_div d-flex gap-2">
+                <div class="d-flex">
+                    <h2 class="count"> 240 </h2>
+                    <h2>+</h2>
+                </div>
+                <h5>Clients</h5>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.5. Counter Style ======== -->
+
+    <!-- ======== 1.6. About us Style ======== -->
+    <section class="container">
+        <div class="row about">
+            <div class="col-lg-6 col-md-6">
+                <div class="d-flex gap-4">
+                    <h3>About Us</h3>
+                    <hr>
+                </div>
+                <h2>Empowering <span> People </span> By Keeping Them Well </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s .</p>
+                <div class="about_icon">
+                    <figure>
+                        <img src="assets/Images/ab_i1.png" alt="About image">
+                    </figure>
+                    <div>
+                        <h3>Smart Solutions</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr.</p>
+                    </div>
+                </div>
+                <div class="about_icon">
+                    <figure>
+                        <img src="assets/Images/ab_i2.png" alt="About image">
+                    </figure>
+                    <div>
+                        <h3>Certified Expert</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industr.</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="About.html">About Us</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 bg">
+                <div>
+                    <div class="ab_im2">
+                        <figure class="ab_im"><img src="assets/Images/ab_im1.png" alt="about_image1"></figure>
+                    </div>
+                    <div class="ab_im2">
+                        <figure class="ab_im"><img src="assets/Images/ab_im2.png" alt="about_image1"></figure>
+                    </div>
+                </div>
+                <div class="ab_im3">
+                    <figure class="ab_im13"><img src="assets/Images/ab_im3.png" alt="about_image2"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of  1.6. About us Style ======== -->
+
+    <!-- ======== 1.7. Artificial Intelligence Style ======== -->
+    <section class="artificial">
+        <div class="row w-100 m-0">
+            <div class="col-lg-6 col-md-6">
+                <figure><img src="assets/Images/artificial.png" alt="artificial image"></figure>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+                <h2>Artificial Intelligence Is The New Big Thing In <span> Technology </span></h2>
+                <div>
+                    <a href="Contact.html">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.7. Artificial Intelligence Style ======== -->
+
+    <!-- ======== 1.8. Team Style ======== -->
+    <section class="container">
+        <div class="team_h d-flex flex-column align-items-center gap-2">
+            <div class="d-flex gap-4">
+                <hr>
+                <h3>Team</h3>
+                <hr>
+            </div>
+            <h2>Our Certified <span> Scientists </span> With Smart Solutions</h2>
+        </div>
+        <div class="team_card">
+            <div class="card d-flex justify-content-end align-items-center">
+                <img src="assets/Images/team1.png" class="card-img" alt="card Image">
+                <div class="d-flex flex-column align-items-center w-100">
+                    <h4 class="card-title">John Edward</h4>
+                    <h5 class="card-text">Operation Manager</h5>
+                    <span class="d-flex gap-4">
+                  <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                  </span>
+                </div>
+            </div>
+            <div class="card d-flex justify-content-end align-items-center">
+                <img src="assets/Images/team2.png" class="card-img" alt="card image">
+                <div class="d-flex flex-column align-items-center w-100">
+                    <h4 class="card-title">John Edward</h4>
+                    <h5 class="card-text">Operation Manager</h5>
+                    <span class="d-flex gap-4">
+                  <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                  </span>
+                </div>
+            </div>
+            <div class="card d-flex justify-content-end align-items-center">
+                <img src="assets/Images/team3.png" class="card-img" alt="card image">
+                <div class="d-flex flex-column align-items-center w-100">
+                    <h4 class="card-title">John Edward</h4>
+                    <h5 class="card-text">Operation Manager</h5>
+                    <span class="d-flex gap-4">
+                  <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fa-brands fa-whatsapp"></i> </a>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.8. Team Style ======== -->
+
+    <!-- ======== 1.9. Testimonial Style ======== -->
+    <section class="container">
+        <div class="testimonial_h d-flex flex-column align-items-center gap-3">
+            <div class="d-flex gap-4">
+                <hr>
+                <h3>Testimonial</h3>
+                <hr>
+            </div>
+            <h2>Succour The <span> Customer Better </span> </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+        </div>
+        <div class="testimon">
+            <div class="slider">
+                <div class="d-flex gap-4">
+                    <div class="border-test">
+                        <div class="testimonial">
+                            <div>
+                                <div class="clip_1">
+                                    <figure class="clip"><img src="assets/Images/testimonial1.png" alt="testimonial1"></figure>
+                                </div>
+                                <div>
+                                    <figure> <img src="assets/Images/testimonial2.png" alt="testimonial"> </figure>
+                                </div>
+                            </div>
+                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</h5>
+                        </div>
+                    </div>
+                    <div class="border-test test_hide">
+                        <div class="testimonial">
+                            <div>
+                                <div class="clip_1">
+                                    <figure class="clip"><img src="assets/Images/testimonial3.png" alt="testimonial1"></figure>
+                                </div>
+                                <div>
+                                    <figure> <img src="assets/Images/testimonial2.png" alt="testimonial"> </figure>
+                                </div>
+                            </div>
+                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex gap-4">
+                    <div class="border-test test_hide">
+                        <div class="testimonial">
+                            <div>
+                                <div class="clip_1">
+                                    <figure class="clip"><img src="assets/Images/testimonial4.png" alt="testimonial1"></figure>
+                                </div>
+                                <div>
+                                    <figure> <img src="assets/Images/testimonial2.png" alt="testimonial"> </figure>
+                                </div>
+                            </div>
+                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</h5>
+                        </div>
+                    </div>
+                    <div class="border-test">
+                        <div class="testimonial">
+                            <div>
+                                <div class="clip_1">
+                                    <figure class="clip"><img src="assets/Images/testimonial5.png" alt="testimonial1"></figure>
+                                </div>
+                                <div>
+                                    <figure> <img src="assets/Images/testimonial2.png" alt="testimonial"> </figure>
+                                </div>
+                            </div>
+                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex gap-4">
+                    <div class="border-test test_hide">
+                        <div class="testimonial">
+                            <div>
+                                <div class="clip_1">
+                                    <figure class="clip"><img src="assets/Images/testimonial1.png" alt="testimonial1"></figure>
+                                </div>
+                                <div>
+                                    <figure> <img src="assets/Images/testimonial2.png" alt="testimonial"> </figure>
+                                </div>
+                            </div>
+                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</h5>
+                        </div>
+                    </div>
+                    <div class="border-test">
+                        <div class="testimonial">
+                            <div>
+                                <div class="clip_1">
+                                    <figure class="clip"><img src="assets/Images/testimonial3.png" alt="testimonial1"></figure>
+                                </div>
+                                <div>
+                                    <figure> <img src="assets/Images/testimonial2.png" alt="testimonial"> </figure>
+                                </div>
+                            </div>
+                            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.9 Testimonial Style ======== -->
+
+    <!-- ======== 1.10. Project Style ======== -->
+    <div class="project_bg">
+        <section class="container">
+            <div class="project_h d-flex flex-column align-items-center gap-3">
+                <div class="d-flex gap-4">
+                    <hr>
+                    <h3> Projects </h3>
+                    <hr>
+                </div>
+                <h2> Our <span> Projects </span> </h2>
+            </div>
+            <div class="row align-items-center project">
+                <div class="col-lg-3 col-md-3 d-flex justify-content-center">
+                    <figure><img src="assets/Images/project1.png" alt="Image"></figure>
+                </div>
+                <div class="col-lg-3 col-md-3 project_card">
+                    <h4>Avation EMF-01</h4>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                    <a href="Projects.html"> Learn More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div class="col-lg-3 col-md-3 d-flex justify-content-center">
+                    <figure><img src="assets/Images/project2.png" alt="Image"></figure>
+                </div>
+                <div class="col-lg-3 col-md-3 project_card">
+                    <h4>Avation EMF-01</h4>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                    <a href="Projects.html"> Learn More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ======== End of 1.10. Project Style ======== -->
+
+    <!-- ======== 1.11. Pricing Plan Style ======== -->
+    <section class="container pricing_plan">
+        <div class="pricing_h d-flex flex-column align-items-center gap-3">
+            <div class="d-flex gap-4">
+                <hr>
+                <h3> Pricing Plan </h3>
+                <hr>
+            </div>
+            <h2> Our <span> Pricing Plan </span> </h2>
+        </div>
+        <div class="d-flex justify-content-center flex-lg-row flex-md-row flex-sm-column flex-column gap-md-5 gap-sm-3 gap-2 align-items-center">
+            <div class="border-price">
+                <div class="pricing_card d-flex flex-column align-items-center justify-content-center gap-1">
+                    <figure><img src="assets/Images/pricing.png" alt="Pricing image"></figure>
+                    <h3>Basic</h3>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <h2>$2.99</h2>
+                    <div>
+                        <a href="Pricing.html">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-price">
+                <div class="pricing_card d-flex flex-column align-items-center justify-content-center gap-1">
+                    <figure><img src="assets/Images/pricing.png" alt="Pricing image"></figure>
+                    <h3>Premium</h3>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Lorem Ipsum dolor sit</p>
+                    </div>
+                    <h2>$3.99</h2>
+                    <div>
+                        <a href="Pricing.html">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.11. Pricing Plan Style ======== -->
+
+    <!-- ======== 1.12. FAQ Style ======== -->
+    <section class="container">
+        <div class="row faq">
+            <div class="col-lg-6 col-md-6">
+                <div class="d-flex gap-4">
+                    <h3>FAQ</h3>
+                    <hr>
+                </div>
+                <h2>How Are Robots <span> Enhancing </span> Health Care?</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. What is Lorem Ipsum?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Why do we use it?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. Where does it come from?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4. Where can I get some?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 bg">
+                <div>
+                    <figure><img src="assets/Images/faq.png" alt="FAQ-Image"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.12. FAQ Style ======== -->
+
+    <!-- ======== 1.13. Contact Style ======== -->
+    <section class="container">
+        <div class="row contact">
+            <div class="col-lg-6 col-md-6">
+                <div>
+                </div>
+                <figure><img src="assets/Images/contact.png" alt="contact"></figure>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="d-flex gap-4 mb-2">
+                    <h3>Contact</h3>
+                    <hr>
+                </div>
+                <h2> Be Well, Stay Calm And <span> Keep In Touch </span> </h2>
+                <form id="my-form">
+                    <div id="success-message"></div>
+                    <div class="d-flex">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="d-flex">
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                    </div>
+                    <div>
+                        <textarea rows="6" placeholder="Message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.13. Contact Style ======== -->
+
+    <!-- ======== 1.14. Insights Style ======== -->
+    <section class="container insight">
+        <div class="insight_h">
+            <div class="d-flex gap-4">
+                <h3>Insights</h3>
+                <hr>
+            </div>
+            <h2> Tapping <span> Intelligence </span> Through Talent. </h2>
+        </div>
+        <div class="insight_card mt">
+            <div class="insight_card1">
+                <div>
+                    <img src="assets/Images/insight1.png" alt="insight_card_image">
+                </div>
+                <div>
+                    <div>
+                        <h3>3 Cobot Success Stories</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="Blog.html">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="insight_card1">
+                <div>
+                    <img src="assets/Images/insight2.png" alt="insight_card_image">
+                </div>
+                <div>
+                    <div>
+                        <h3>Boost Your Cobot Safety Know.</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="Blog.html">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="insight_card">
+            <div class="insight_card1">
+                <div>
+                    <img src="assets/Images/insight3.png" alt="insight_card_image">
+                </div>
+                <div>
+                    <div>
+                        <h3>Self-Driving Vehicle Success Is Tied.</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="Blog.html">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="insight_card1">
+                <div>
+                    <img src="assets/Images/insight4.png" alt="insight_card_image">
+                </div>
+                <div>
+                    <div>
+                        <h3>Justifying Automation Factory.</h3>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="Blog.html">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.14. Insights Style ======== -->
+
+    <!-- ======== 1.15. Footer Style ======== -->
+    <footer class="text-md-start text-sm-center text-center pt-md-4 pt-sm-5 pt-4 pb-lg-0 pb-md-4 pb-sm-4 pb-4">
+        <div class="container">
+            <div class="row d-flex flex-md-row flex-sm-column-reverse flex-column-reverse">
+                <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+                    <div class="d-flex gap-4 align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <h3> Newsletter </h3>
+                        <hr>
+                    </div>
+                    <h2> Subscribe To Our <span> Newsletter </span> </h2>
+                    <div id="footer-message"> </div>
+                    <form class="d-flex" id="footer-form">
+                        <input type="email" placeholder="Enter your email address." required>
+                        <div>
+                            <button type="submit">Subcribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 bg">
+                    <figure><img src="assets/Images/footer.png" alt="Footer_image"></figure>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container copyright pt-lg-5 pt-md-4 pt-sm-4 pt-4 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+        <div class="d-flex flex-md-row flex-sm-column flex-column gap-md-0 gap-sm-4 gap-3 align-items-center justify-content-between text-center">
+            <figure>
+                <a href="Home.html"><img src="assets/Images/logo.svg" alt="logo"></a>
+            </figure>
+            <ul class="list-inline d-flex flex-wrap gap-md-3 gap-sm-3 gap-2 justify-content-center">
+                <li class="list-inline-item"><a href="#">Company</a></li>
+                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+                <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="d-flex flex-md-row flex-sm-column flex-column gap-3 align-items-center justify-content-between text-center">
+            <span class="d-flex gap-3">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </span>
+            <p>Copyright © 2023 Avation, All rights reserved. Powered by Evonicmedia</p>
+        </div>
+    </div>
+    <!-- ======== End of 1.15. Footer Style ======== -->
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- counter -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Framework javascript -->
+    <script src="assets/js/javascript_lib/bootstrap.min.js"></script>
+    <!-- slider -->
+    <!-- <script src="assets/js/slick.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- style javascript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // footer validation start
+        const fom = document.getElementById('footer-form');
+        const footerMessage = document.getElementById('footer-message');
+
+        fom.addEventListener('submit', (event) => {
+            event.preventDefault();
+            footerMessage.innerHTML = 'Form submitted success fully!';
+            footerMessage.style.display = 'block';
+            fom.reset();
+            setTimeout(() => {
+                footerMessage.style.display = 'none';
+            }, 3000);
+        });
+        // footer validation end
+    </script>
+</body>
+
+</html>
